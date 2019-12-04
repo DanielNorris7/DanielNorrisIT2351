@@ -12,7 +12,16 @@
 
 
 ### Log Files
-- TODO: Explain the types and purposes of the log files.
+- Explain the types and purposes of the log files.
+> **Error Log:** Writes information to a log file about issues encourted during the starting, running or stopping of mysql.
+
+> **General query log:** Logs client connections and statements received from the client.
+
+> **Binary log:** Logs sql statements that modifies data. This is also used for replication.
+
+> **Relay log:** Logs changed made from a replication master server.
+
+> **Slow query log:** Logs queries that take longer than a pre-dertmined time to execute.
 
 ### Variables
 - TODO: Explain the purpose of and provide an example of status and system variables.
