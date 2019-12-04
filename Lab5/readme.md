@@ -24,7 +24,10 @@
 > **Slow query log:** Logs queries that take longer than a pre-dertmined time to execute.
 
 ### Variables
-- TODO: Explain the purpose of and provide an example of status and system variables.
+- Explain the purpose of and provide an example of status and system variables.
+> **Status Variables:** Variables that provide information about it's operation. An example of a Status Varible would be the number of failed attempts to connect to the sql server.
+
+> **System Variables:** Variables that that are built in. System variables may also be installed by server plugins or components. An example of a System Variable could be a plugin that would implement an audit log plicy.
 
 ### Privileges
 
