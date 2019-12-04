@@ -1,7 +1,15 @@
 ## Executive Summary
 
 ### Database Administrator Responsibilities
-- TODO: Explain the major roles of a database administrator.
+- Explain the major roles of a database administrator.
+> The major roles of a database administrator (dba) include most areas around transporting, storing, 
+> securing and the maintenance of data.
+>> **Manages data integrity** This is a key responsiblilty of a dba to ensure that the data is 
+>> always accurate.  
+>> **Manages data recovery & back up procedures** Another key responbility of a dba is to ensure that >> a strong back up procedure is in place. That way when the database goes offline for some reason, >> the dba can have the database in a useable state as quickly as possible. 
+>> **Monitoring database performance & accessibility** Part of maintaing a database is to ensure that >> the data is being stored and collected as quickly as possible. The follow-up is that the
+>> individuals only have access to the data that they need.  
+
 
 ### Log Files
 - TODO: Explain the types and purposes of the log files.
