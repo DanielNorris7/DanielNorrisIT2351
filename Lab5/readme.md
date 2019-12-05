@@ -35,18 +35,21 @@
   
 CREATE USER guitar_admin@localhost IDENTIFIED BY 'pa55word';  
 CREATE USER guitar_user@localhost IDENTIFIED BY 'pa55word';  
+> - The above two statements are creating two users (guitar_admin & guitar_user) with a password of pa55word. 
 
 GRANT ALL  
 
 ON guitar.*  
 
 TO guitar_admin@localhost;  
+> - This next statement is granting all (Create, Drop, Delete, Insert, Select, Update) rights to the guitar_admin user for any table using the guitar schema.
 
 GRANT SELECT, INSERT, UPDATE, DELETE  
 
 ON guitar.*  
 
 TO guitar_user@localhost;  
+> - This statement is granting the guitar_user rights to only Select, Insert, Update and Delete for tables in the guitar schema. 
 
 #### B) What are the privilege levels that can be granted to a user?  
 
