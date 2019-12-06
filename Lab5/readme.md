@@ -51,7 +51,11 @@ ON guitar.* 
 TO guitar_user@localhost;  
 > - This statement is granting the guitar_user rights to only Select, Insert, Update and Delete for tables in the guitar schema. 
 
-#### B) What are the privilege levels that can be granted to a user?  
+#### B) What are the privilege levels that can be granted to a user? 
+> MySql offers three different types of privilege levels. 
+> 1. Administrative privileges enable users to manage operation of the MySQL server. These privileges are global because they are not specific to a particular database.
+> 2. Database privileges apply to a database and to all objects within it. These privileges can be granted for specific databases, or globally so that they apply to all databases.
+> 3. Privileges for database objects such as tables, indexes, views, and stored routines can be granted for specific objects within a database, for all objects of a given type within a database (for example, all tables in a database), or globally for all objects of a given type in all databases.
 
 #### C) How would this code change to grant column privileges to the customer first_name, last_name and email_address?   
 
