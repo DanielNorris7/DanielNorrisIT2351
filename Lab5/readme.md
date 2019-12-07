@@ -74,15 +74,25 @@ TO guitar@localhost;
 ### Roles
 
 #### A) Create a role to provide update privileges to the categories table (either here in discussion format or in MySQL Workbench)  
+``
+CREATE USER 'GeorgeWashington'@'localhost' IDENTIFIED BY '@pp|3Tre3';
+
+GRANT UPDATE
+ON categories
+TO GeorgeWashington@localhost;
+```
+> The first statment creates a new user named GeorgeWashingoton with a strong password.
+The second statment gives GeorgeWashing right to update or modify the categories table.
 
 #### B) Grant privileges to the role and, assign users to the role (either here in discussion format or in MySQL Workbench)  
+
  
 #### C) Explain why roles would be useful.
 
 ### Backing Up a Database
 
 #### A) What is a backup and restore strategy and why are they important?  
-  
+ 
 #### B) What is the difference between a full and incremental backup? 
 
 ## Conclusion 
