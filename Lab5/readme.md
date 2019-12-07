@@ -57,9 +57,19 @@ TO guitar_user@localhost; 
 > 2. Database privileges apply to a database and to all objects within it. These privileges can be granted for specific databases, or globally so that they apply to all databases.
 > 3. Privileges for database objects such as tables, indexes, views, and stored routines can be granted for specific objects within a database, for all objects of a given type within a database (for example, all tables in a database), or globally for all objects of a given type in all databases.
 
-#### C) How would this code change to grant column privileges to the customer first_name, last_name and email_address?   
+#### C) How would this code change to grant column privileges to the customer first_name, last_name and email_address?  
+```
+GRANT SELECT(first_name, last_name and email_address), 
+      INSERT(first_name, last_name and email_address), 
+      UPDATE(first_name, last_name and email_address), 
+      DELETE(first_name, last_name and email_address)
+ON customers
+TO guitar@localhost;
+```
 
-#### D) Why would you want to do this? 
+#### D) Why would you want to do this?
+> An example of why someone would want to assign specific rights to a table, could be to prevent users from having access to sensative information. 
+>> Example: You're working on developing a new HR web app. You may want your indvidual contributors to see some basic information about a co-worker (email, direct manager, position, etc.), but not data on performance or salary. However, you would probably want a managers group that has access to view and update that data, but not delete; for HR purposes. Being able to control the interaction on a column level can be very crucial to handling sensative company information and insuring data integrity.
 
 ### Roles
 
