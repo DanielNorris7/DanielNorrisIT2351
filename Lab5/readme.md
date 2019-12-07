@@ -95,11 +95,17 @@ TO 'GeorgeWashington';
 > Next we assign GeorgeWashington to the presidents role within the north winds database.
  
 #### C) Explain why roles would be useful.
+> Looking back at my HR application example in the previous question. Creating a role and assigning users to the role would be a much more effective way to assign rights. 
+>> Continuing on from my example: It would be more effiecent to create a role, assign privilages to that role, then assign any necessary users to that role. This also helps with security and consistancy. If the dba were to set the rights for each users, because of simple human nature, a user would be given more rights then needed at somepoint. However, having a role that a user is just assigned to streamlines the process.
 
 ### Backing Up a Database
 
 #### A) What is a backup and restore strategy and why are they important?  
+> Having a strong backup strategy is one of the most important parts of the of a DBA job. With a backup and restore strategy is put in place to ensure that a companies data is not lost. This includes more security threats, such as ransomware. If the database is compromised (ransomware, data corruption, server crashes); a DBA should be able to restore a backup quickly to minimize the disruption to the business.  
  
 #### B) What is the difference between a full and incremental backup? 
+> **Full Backup:** Like it sounds, a full backup of the database is an exact copy of the database that is made. This can be schedule to ensure that if the main database fails, an exact copy can be stood up. After the intial full backup has been made, a **differential backup** is used to backup the data since the last full backup was performed.
+> **Incremental Backup:** An incremental backup only includes the changes since the previous backup. This strategy first makes a differential backup, then the following backup only include changes from the last incremental backup. 
 
 ## Conclusion 
+> In conclusion, a Database Administrator has a considerable amount of responsiblity, that should never be taken lightly. DBA's are in charge of a company's data and is responsible for ensuring that the right information is always accessible. Not only does this include a strategic backup plan, but also monitoring logs and performance metrics. 
