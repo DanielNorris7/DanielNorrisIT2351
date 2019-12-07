@@ -74,7 +74,7 @@ TO guitar@localhost;
 ### Roles
 
 #### A) Create a role to provide update privileges to the categories table (either here in discussion format or in MySQL Workbench)  
-``
+```
 CREATE USER 'GeorgeWashington'@'localhost' IDENTIFIED BY '@pp|3Tre3';
 
 GRANT UPDATE
@@ -82,10 +82,17 @@ ON categories
 TO GeorgeWashington@localhost;
 ```
 > The first statment creates a new user named GeorgeWashingoton with a strong password.
-The second statment gives GeorgeWashing right to update or modify the categories table.
+> The second statment gives GeorgeWashing right to update or modify the categories table.
 
 #### B) Grant privileges to the role and, assign users to the role (either here in discussion format or in MySQL Workbench)  
+```
+CREATE ROLE dnorrisNorthWind_president;
 
+GRANT dnorrisNorthWind_president
+TO 'GeorgeWashington';
+```
+> The first statment create a new role for the president in the north winds database. 
+> Next we assign GeorgeWashington to the presidents role within the north winds database.
  
 #### C) Explain why roles would be useful.
 
