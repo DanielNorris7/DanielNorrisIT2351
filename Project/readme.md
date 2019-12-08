@@ -1,4 +1,5 @@
 ### Executive summary  
+This readme file will be used to answer the question posed for the final project.
 
 Guitar Shop Design 
 
@@ -14,4 +15,8 @@ Guitar Shop Design
 > 2. I would create a Stored Procedure that takes in an Order ID. Then I would display the customers information (Concated name, email, concated address, phone number), thier order ship total (ship amount + tax) the products ordered, qunatity and any discounts. That way someone can easily look up an order with just an order id. 
 > 3. I would update the credit card number column to use either MD5 or AES encryption. That way when someone tried to pull information from that column, it would be encrypted by default. Then add a decryption call for specific roles or stored function that would need to see the plain text value. 
 
+### MySQL/SQL Certification
+> If I were to seek a MYSQL certification, I would obtain the Modern Big Data Analysis with SQL Specialization certification. This certification dives into topics for cloud usage, data analysis and cluster storage. These topics are important for organzations attempting to use modern software architecture. Depending on the organization, having the ability to exam large data sets and use statitcs to make recommendation can be critical to the business. 
+
 ### Conclusion
+For DBAs, technical consultant, technical support staff, software developers; having knowledge of database is critical to be sucessful. Once an individual knows how to efficently use a database, the quality of work they can produce will increase. They will be able to provide customers with more stable data storage and help support the technical backbone of any modern organization.  
