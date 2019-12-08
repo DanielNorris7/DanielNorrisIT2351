@@ -8,4 +8,10 @@ Guitar Shop Design
 ### Explain why there is an addresses table and how it is used. 
 > The address table is used hold the address data for the customers. However, the database was designed to have the address on a seperate table from the customers, so that a customer can have more than one address. The most common example would be a shipping and billing address. Instead of having duplicate columns in the customers table, a seperate address table can be used to create a one-to-many relationship. 
 
+### Database Administration
+> As a DBA, three things I would change about this database would be:
+> 1. I would add a new column to the customers table named 'recieve_emails', so we can track if they would like to recieve marketing emails on an opt-in basis. 
+> 2. I would create a Stored Procedure that takes in an Order ID. Then I would display the customers information (Concated name, email, concated address, phone number), thier order ship total (ship amount + tax) the products ordered, qunatity and any discounts. That way someone can easily look up an order with just an order id. 
+> 3. I would update the credit card number column to use either MD5 or AES encryption. That way when someone tried to pull information from that column, it would be encrypted by default. Then add a decryption call for specific roles or stored function that would need to see the plain text value. 
+
 ### Conclusion
